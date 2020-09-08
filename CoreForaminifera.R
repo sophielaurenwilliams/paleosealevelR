@@ -5,7 +5,7 @@ theme_set(theme_bw(8))
 
 #Change data from wide format to long format and tell R which columns to exclude
 
-core<-pivot_longer(lgcore, -1, names_to="species", values_to = "rel_abund")
+core<-pivot_longer(core, -1, names_to="species", values_to = "rel_abund")
 
 core_plot <- ggplot(core, aes(x = rel_abund, y = Depth,fill=species)) +
   geom_colh(width=0.15) +
