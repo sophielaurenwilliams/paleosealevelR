@@ -8,7 +8,7 @@ theme_set(theme_bw(8))
 
 ITRAX<-pivot_longer(ITRAX, -1, names_to="parameter", values_to = "value")
 
-ggplot(wapITRAX, aes(x = Depth , y = value))+
+ggplot(ITRAX, aes(x = Depth , y = value))+
   labs(x = "Depth (cm)")+
   geom_line() +
   coord_flip() +
