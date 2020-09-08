@@ -21,7 +21,6 @@ P1
 #Plot elevation data - use theme element_blank() if you want to get rid of the x axis so it can plot on top of the foraminifera plot
 
 P2<-ggplot(transects,aes(x=Distance, y=Elevation))+
-geom_point()+
 geom_line(size=0.5)+
 geom_point(size=2)+
 theme(axis.ticks = element_blank())+
